@@ -1,0 +1,31 @@
+
+/*Laptop screen*/
+@media only screen and (max-width:1200px){
+    
+    } 
+
+
+
+/* Big Tablet  to Laptop */
+@media (min-width: 769px) and (max-width: 1024px ){
+    
+    
+    
+}
+/*small to Big Tablet*/
+@media (min-width:481px) and (max-width: 768px){
+    
+}
+
+
+
+/*Andriod Phone to Small Tablet */
+@media (min-width:0px) and (max-width:500px){
+  
+
+}
+  
+
+
+
+

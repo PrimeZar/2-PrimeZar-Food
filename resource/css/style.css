@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    background-color: rgb(255, 255, 255);
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sam-sarif';
+    font-size: 20px ;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1px;
+}
+
+/* +++++++++++ HEADINGS +++++++++++ */
+
+h1,
+h2,
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: rgb(70, 67, 67);
+    font-size: 180%;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+    }
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "  ";
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* +++++++++++ BOTTONS +++++++++++ */
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 4px 20px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px 20px ;
+    color: #fff;
+    transition: background-color 2.2s, border 2.2s, color 2.2s ;
+    
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: rgb(230, 93, 15);
+    border: 1px solid rgb(230, 93, 15);
+
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid rgb(230, 93, 15);
+    color:rgb(230, 93, 15);
+
+}
+
+.btn:hover,
+.btn:active{
+    color: rgb(99, 202, 3);
+    background-color: rgb(185, 224, 188);
+    border: rgb(99, 202, 3);
+    
+}
+/* +++++++++++ HEAD +++++++++++ */
+
+header{
+    background-image:linear-gradient(rgb(0, 0, 0, 0.3),rgb(0, 0, 0, 0.3)), url(img/OIP.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}  
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float:left;
+    margin-top: 20px;
+    border-radius: 50%;
+    
+}
+
+
+.main-nav{
+    list-style: none;
+    margin-top: 55px;
+    float: right;
+
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 5px transparent;
+    transition: border-bottom 1.0s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgb(223, 219, 35);
+
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px ;
+    z-index: 100;
+    background-color: rgb(221, 211, 211);
+   
+ }
+
+.sticky .logo{ 
+    height: 30px;
+    margin-top: 0px;
+    
+}
+
+.sticky .main-nav{
+    margin-top: 0px;
+       
+}
+.sticky .main-nav li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    
+}
+
+/* PARAGRAPHS */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    
+}
+
+/* +++++++++++ ICONS +++++++++++ */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: rgb(184, 75, 75);
+    margin-bottom: 10px;
+}
+.section-features .long-copy{
+    margin-bottom: 30px; 
+
+}
+
+/* +++++++++++ MEALS +++++++++++ */
+.sec-meals {
+    padding: 0 5px;
+    margin-bottom: 510px;
+}
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li {
+    display: block;
+    float: left; 
+    width: 25%;
+}
+ 
+.meals-photo {
+    width: 100%;
+    margin: 0;
+    
+}
+
+.meals-photo img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* +++++++++++ Section 3: HOW IT WORKS SECTION +++++++++++ */
+.section-step{
+    background-color: rgb(236, 218, 218);
+    
+
+  }
+
+.step-box {
+    margin-top: 30px;
+    
+}
+.step-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    
+}
+.step-box:last-child{
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+
+}
+
+.work-step {
+    margin:50px;
+    
+}
+
+.work-step:last-of-type{
+    margin-bottom: 80px;
+
+}
+
+ .big-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+} 
+
+.work-step div{
+    color: #e67e22;
+    font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22 ;
+    border-radius: 50%;
+    /* display: inline-block; */
+    margin-right: 25px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+}
+
+.btn-app img {
+    height: 50px;
+    padding-right: 0px;
+    width: auto;
+    margin-left: 50px
+}
+
+
+
+
+/* +++++++++++ CITY SECTION 4 +++++++++++ */
+
+.section-cities{
+   margin-bottom: 5px;
+
+}
+
+.city-box {
+        padding-top: 10%;
+}
+
+.city-box img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+   
+}
+
+.city-feature{
+    padding: 5px 0;
+}
+
+.icon-small{
+    color: #e67e22;
+}
+
+/* +++++++++++ Section 5: Customer Testimonials +++++++++++ */
+
+.testimony{
+    background-image:url(img/background.jpg) ;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    
+} 
+.b{
+    color: #fff;
+}
+blockquote{
+    font-style: italic;  
+    padding: 2px;
+    line-height: 145%; 
+/*    position: relative; */
+}
+
+blockquote:before {
+    font-size: 500%;
+
+}
+
+
+cite{
+    display: block;
+    margin-top: 30px;
+
+}
+
+cite img{
+    border-radius: 100%;
+    height: 70px;
+    vertical-align: middle;
+    
+}
+
+/* +++++++++++ Section 6: Sign up and pricing plans +++++++++++ */
+
+.section-plans {
+background-color: rgb(192, 190, 190);
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    /* margin-left: 5%; */
+    /* box-shadow: 0 2px 2px #e67e22; */
+    
+}
+.plan-box div{
+    padding: 10px;
+    border-bottom: 5px solid rgb(216, 192, 192);
+}
+/* .plan-box div:first-child {
+    background-color: rgb(223, 53, 53);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+} */
+
+/* .plan-box div:last-child{
+    text-align: center;
+    color: #ee4c30;
+    border:0 ;
+} */
+
+.plan-price {
+    font-size: 300%;
+    /* margin-bottom: 10px; */
+    font-weight: 300;
+    color: #e67e22;
+    
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+    color: #555;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+
+}
+
+.plan-box ul {
+    list-style: none;
+}
+.plan-box li {
+    padding: 5px;
+}
+
+
+/* +++++++++++ Section 7: Contact form +++++++++++ */
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+input[type = email],
+input[type = text ],
+textarea,
+select{
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(219, 175, 52);
+}
+label{
+    color: #e67e22;
+}
+
+textarea { 
+    height: 100px;
+}
+
+input[type = checkbox]{
+    margin: 10px 20px 10px 10px;
+}
+
+
+*:focus{
+    outline: none;
+}
+
+
+/* +++++++++++ Section 7: FOOTER +++++++++++ */
+
+footer{
+  background-color: rgb(49, 40, 40); 
+  color: rgb(196, 191, 191);
+    height: 200px;
+    
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    text-decoration: none;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+
+.footer-nav li ,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    border: 0;
+    
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    color: rgb(156, 152, 152);
+    transition: color 2s; 
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color: white;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram{
+    transition: color 2s;
+}
+
+.ion-logo-facebook:hover{
+    color: #3b5998;
+}
+.ion-logo-twitter:hover{
+    color: #00aced;
+}
+.ion-logo-googleplus:hover{
+    color: #517fa4;
+}
+.ion-logo-instagram:hover{
+    color:#dd4b39;
+}
+
+
+
+.write-up{
+    margin-top: 70px;
+    text-align: center;
+       
+}
+
+
